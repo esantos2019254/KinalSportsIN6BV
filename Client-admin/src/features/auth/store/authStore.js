@@ -12,15 +12,25 @@ export const useAuthStore = create(
             error: null,
             isAuthenticated: false,
 
+            logout: () => {
+                set({
+                    user: null,
+                    token: null,
+                    expiresAt: null,
+                    isAuthenticated: false
+                })
+            },
+
             login: async ({ emailOrUsername, password }) => {
                 try {
                     set({ loading: true, error: null });
 
                     const { data } = await loginRequest({ emailOrUsername, password })
+                    console.log(data)
 
                     set({
                         user: data.userDetails,
-                        token: data.token,
+                        token: data.accessToken,
                         expiresAt: data.expiresAt,
                         loading: false,
                     })
