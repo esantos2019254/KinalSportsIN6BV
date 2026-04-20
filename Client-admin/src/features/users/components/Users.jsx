@@ -4,6 +4,7 @@ import { Spinner } from "../../../shared/components/layout/Spinner.jsx";
 import { showError, showSuccess } from "../../../shared/utils/toast.js";
 import { CreateUserModal } from "./CreateUserModal.jsx";
 import { useAuthStore } from "../../auth/store/authStore.js";
+import { UserDetailModal } from "./UserDetailModal.jsx";
 
 const PAGE_SIZE = 8;
 
@@ -16,6 +17,8 @@ export const Users = () => {
     const [roleFilter, setRoleFilter] = useState("ALL");
     const [page, setPage] = useState(1);
     const [openCreateModal, setOpenCreateModal] = useState(false);
+    const [openDetailModal, setOpenDetailModal] = useState(false)
+    const [selectedUser, setSelectedUser] = useState(null);
 
     useEffect(() => {
         fetchUsers();
@@ -31,6 +34,11 @@ export const Users = () => {
         }
         showError(res.error || "No se puedo crear el usuario");
         return false;
+    }
+
+    const handleOpenDetail = (user) => {
+        setSelectedUser(user)
+        setOpenDetailModal(true);
     }
 
     return (
@@ -116,6 +124,7 @@ export const Users = () => {
                                         <td className="px-4 py-3 text-right">
                                             <button
                                                 className="px-3 py-1.5 rounded-lg bg-main-blue text-white text-xs font-semibold hover:opacity-90"
+                                                onClick={() => handleOpenDetail(u)}
                                             >
                                                 Ver / Editar
                                             </button>
@@ -155,6 +164,17 @@ export const Users = () => {
                 onCreate={handleCreate}
                 loading={loading}
                 error={error}
+            />
+
+            <UserDetailModal
+                key={selectedUser?.id || "no-user"}
+                isOpen={openDetailModal}
+                onClose={ () => {
+                    setOpenDetailModal(false);
+                    setSelectedUser(null);
+                }}
+                user={selectedUser}
+                loading={loading}
             />
         </div >
     );
