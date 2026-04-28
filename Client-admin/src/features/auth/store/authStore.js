@@ -31,6 +31,7 @@ export const useAuthStore = create(
                         expiresAt: null,
                         isAuthenticated: false,
                         isLoadingAuth: false,
+                        loading: false,
                         error: "No tienes permisos para acceder como administrador."
                     })
                     return;
@@ -87,6 +88,7 @@ export const useAuthStore = create(
                             expiresAt: null,
                             isAuthenticated: false,
                             isLoadingAuth: false,
+                            loading: false,
                             error: message
                         })
 
