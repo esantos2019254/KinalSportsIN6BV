@@ -21,3 +21,4 @@ C:\Tareas\IN6BV\KinalSports\authentication-service\auth-service\src\AuthService.
 C:\Tareas\IN6BV\KinalSports\authentication-service\auth-service\src\AuthService.Domain\obj\Debug\net8.0\refint\AuthService.Domain.dll
 C:\Tareas\IN6BV\KinalSports\authentication-service\auth-service\src\AuthService.Domain\obj\Debug\net8.0\AuthService.Domain.pdb
 C:\Tareas\IN6BV\KinalSports\authentication-service\auth-service\src\AuthService.Domain\obj\Debug\net8.0\ref\AuthService.Domain.dll
+C:\Tareas\IN6BV\KinalSports\authentication-service\auth-service\src\AuthService.Domain\obj\Debug\net8.0\AuthService.Domain.sourcelink.json

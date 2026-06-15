@@ -7,6 +7,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 // Screen imports
 import FieldsScreen from "../features/fields/screens/FieldsScreen";
 import ProfileScreen from "../features/profile/screens/ProfileScreen";
+import FieldDetailScreen from "../features/fields/screens/FieldDetailScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -17,6 +18,11 @@ const FieldsStack = () => (
         <Stack.Screen
             name="FieldsList"
             component={FieldsScreen}
+            options={{ title: "Canchas" }}
+        />
+        <Stack.Screen
+            name="FieldDetail"
+            component={FieldDetailScreen}
             options={{ title: "Canchas" }}
         />
     </Stack.Navigator>
