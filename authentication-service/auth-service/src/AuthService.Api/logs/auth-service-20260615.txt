@@ -1,0 +1,12 @@
+[2026-06-15 14:29:06 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-15 14:29:07 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-15 14:29:07 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-15 14:29:08 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-06-15 14:32:28 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"be83bb95-c373-4dfc-9f53-3fc7bd800809","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMB3KREUMPS:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMB3KREUMPS"}
+[2026-06-15 14:32:28 INF] HTTP POST /api/v1/auth/login responded 200 in 1776.2879 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMB3KREUMPS:00000001","ConnectionId":"0HNMB3KREUMPS"}
+[2026-06-15 15:25:38 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-06-15 15:25:39 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-06-15 15:25:39 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-06-15 15:25:39 INF] AuthService API is running at http://0.0.0.0:5156. Health endpoint: http://0.0.0.0:5156/health {"SourceContext":"Program"}
+[2026-06-15 15:26:21 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"7ea14e48-5d83-45e1-aa22-917153ae2e63","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNMB4IV5R7SU:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNMB4IV5R7SU"}
+[2026-06-15 15:26:21 INF] HTTP POST /api/v1/auth/login responded 200 in 766.0568 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNMB4IV5R7SU:00000001","ConnectionId":"0HNMB4IV5R7SU"}
